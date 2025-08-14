@@ -23,4 +23,21 @@ human_damage = 20
 dragon_hp = 300
 dragon_damage = 50
 
-#task 2:
+#task 2&3:Player Choice Prompt and Selection
+while True:
+    print("1) Wizard")
+    print("2) Elf")
+    print("3) Human")
+
+    character_choice = input("Choose your character: ")
+
+    if character_choice == "1":
+        character = wizard
+        my_hp = wizard_hp
+        my_damage = wizard_damage
+        break
+    elif character_choice == "2":
+        character = elf
+        my_hp = elf_hp
+        my_damage = elf_damage
+        break
